@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LenovoDbModelStoreContainer" CdmEntityContainer="LenovoDbEntities">
+    <EntitySetMapping Name="Lenovoes">
+      <EntityTypeMapping TypeName="LenovoDbModel.Lenovo">
+        <MappingFragment StoreEntitySet="Lenovo">
+          <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
+          <ScalarProperty Name="PDate" ColumnName="PDate" />
+          <ScalarProperty Name="OwnerName" ColumnName="OwnerName" />
+          <ScalarProperty Name="Contact" ColumnName="Contact" />
+          <ScalarProperty Name="DeviceType" ColumnName="DeviceType" />
+          <ScalarProperty Name="SerialNo" ColumnName="SerialNo" />
+          <ScalarProperty Name="IssueDescription" ColumnName="IssueDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

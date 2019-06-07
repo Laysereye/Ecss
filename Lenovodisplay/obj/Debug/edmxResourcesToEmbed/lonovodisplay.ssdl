@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LenovoDbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Lenovo">
+    <Key>
+      <PropertyRef Name="ServiceID" />
+    </Key>
+    <Property Name="ServiceID" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="PDate" Type="datetime" Nullable="false" />
+    <Property Name="OwnerName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Contact" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="DeviceType" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="SerialNo" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="IssueDescription" Type="nvarchar" MaxLength="200" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="LenovoDbModelStoreContainer">
+    <EntitySet Name="Lenovo" EntityType="Self.Lenovo" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
